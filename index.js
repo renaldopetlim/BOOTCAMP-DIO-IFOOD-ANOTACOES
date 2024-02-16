@@ -365,3 +365,64 @@ switch (dia){
     //-----------------------------------------------//
         console.log("----------")
     //-----------------------------------------------//
+
+// Funções
+    torrar()
+
+    function torrar(){
+        console.log("Torrando Pão")
+        injetarPao()
+    }
+    function injetarPao(){
+        console.log("Preparando para Injetar o Pão")
+            console.log("Finalizado")
+    }
+
+    console.log("--")
+
+    function fazerMagica(){
+        console.log("Abracadabra !!! Coisas Mágicas Aconteceram")
+    }
+
+    console.log("--")
+
+    function saudar(nome){
+        console.log("Olá, " + nome + "! Como você está ?")
+    }
+
+    saudar("Renaldo");
+    saudar("Thalita");
+
+    function calcularIdade(nome, anoNascimento){
+        let idade = 2024 - anoNascimento;
+        console.log(nome + " tem " + idade + " anos !")
+    }
+
+    calcularIdade("Renaldo", 1996);
+    calcularIdade("Thalita", 1995);
+
+//-----------------------------------------------//
+console.log("----------")
+//-----------------------------------------------//
+
+let userName = getFirstName("Carlos-Almeida-Juanito-Gargalo", "-")
+    console.log("Seja Bem Vindo " + userName)
+
+    userName = getFirstName("Felipe Silva Han Solo", " ")
+        console.log("Seja Bem Vindo " + userName)
+
+        function getFirstName(name, splitChar){
+            let firstName = name.split(splitChar)[0]
+                return firstName
+        }
+
+//-----------------------------------------------//
+console.log("----------")
+//-----------------------------------------------//
+
+    function somar(numero1, numero2){
+        return numero1 + numero2;
+    }
+
+    let result = somar(5, 3);
+        console.log("A Soma é: " + result);
