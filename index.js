@@ -416,9 +416,7 @@ let userName = getFirstName("Carlos-Almeida-Juanito-Gargalo", "-")
                 return firstName
         }
 
-//-----------------------------------------------//
-console.log("----------")
-//-----------------------------------------------//
+    console.log("--")
 
     function somar(numero1, numero2){
         return numero1 + numero2;
@@ -426,3 +424,61 @@ console.log("----------")
 
     let result = somar(5, 3);
         console.log("A Soma é: " + result);
+
+//-----------------------------------------------//
+console.log("----------")
+//-----------------------------------------------//
+
+let invoice = {
+    name: "Felipe",
+        age: 28,
+        products: {
+            0: ["Mouse Fortrek Semi-Mecanico", 79,90],
+            1: ["Teclado Fortrek Semi-Mecanico", 129,90],
+            2: ["Monitor Zinnia 27 Pol.", 749,90],
+            3: ["Monitor Zinnia 27 Pol.", 749,90],
+            4: ["Placa de Vídeo PCYes RX570 4GB", 550,90],
+            5: ["Memoria-RAM Crucial Balistic 8 GB DDR4", 255,50]
+        },
+        taxes: "75,90"
+}
+
+generateInvoice(invoice)
+
+    function generateInvoice(invoice){
+        console.log(`O Comprador é ${invoice.name}`)
+            console.log(`A Idade Dele é ${invoice.age}`)
+
+        for(let index in invoice.products){
+            let [productName, productPrice] = invoice.products[index]
+                console.log(`- ${productName}: R$ ${productPrice}`)
+        }
+    }
+
+console.log("--")
+
+    let bichinhos = [
+        { "nome": "Gordinha", "tipo": "Siamês", "idade": 6 },
+        { "nome": "Salsicha", "tipo": "Rajado", "idade": 5 },
+        { "nome": "Maria", "tipo": "Frajola", "idade": 2 },
+    ];
+
+    let bichinhoEscolhido = bichinhos[0];
+        console.log("A " + bichinhoEscolhido.nome + " é do tipo " + bichinhoEscolhido.tipo + ". Ela tem " + bichinhoEscolhido.idade + " anos de idade");
+
+    let listaParaAmigo = JSON.stringify(bichinhos);
+        console.log(listaParaAmigo);
+
+console.log("--")
+
+    let convidado = {
+        nome: "Renaldo",
+        idade: 10,
+        presente: "Carrinho de Controle Remoto"
+    };
+        console.log(convidado.nome + " tem " + convidado.idade + " anos e trouxe um " + convidado.presente + " de presente !!!");
+
+console.log("--")
+
+    convidado.localizacao = "Sala de Estar";
+        console.log(convidado.nome + " está na " + convidado.localizacao + ".")
