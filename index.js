@@ -54,11 +54,11 @@ console.log("---")
 // Vetores e Matrizes:
 let nomesPokemon = ["Pikachu", "Charmander", "Bulbassaur"]
 let timePokemon = [
-  ["Pikachu", "Eletrico", 35],
-  ["Charmander", "Fogo", 39],
-  ["Bulbassaur", "Grama", 45],
-  ["Squirtle", "Agua", 44],
-  ["Pidgeotto", "Voador", 63]
+    ["Pikachu", "Eletrico", 35],
+    ["Charmander", "Fogo", 39],
+    ["Bulbassaur", "Grama", 45],
+    ["Squirtle", "Agua", 44],
+    ["Pidgeotto", "Voador", 63]
 ]
 console.log("O Pokemon " + timePokemon[0][0] + " é do tipo " +  timePokemon[0][1] + " e possui " + timePokemon[0][2] + " de HP")
 console.log("O Pokemon " + timePokemon[1][0] + " é do tipo " +  timePokemon[1][1] + " e possui " + timePokemon[1][2] + " de HP")
@@ -67,7 +67,7 @@ console.log("O Pokemon " + timePokemon[3][0] + " é do tipo " +  timePokemon[3][
 console.log("O Pokemon " + timePokemon[4][0] + " é do tipo " +  timePokemon[4][1] + " e possui " + timePokemon[4][2] + " de HP")
 
 //-----------------------------------------------//
-console.log("----------")
+console.log("------------------")
 console.log("-- ARITIMÉTICOS --")
 //-----------------------------------------------//
 
@@ -257,7 +257,7 @@ console.log("-- INCREMENTO e DECREMENTO --")
             console.log("O Valor Final é de: " + contadorDec)
 
 //-----------------------------------------------//
-    console.log("-- If, Else If e Else --")
+    console.log("-- IF, ELSE IF e ELSE --")
 // If, Else If e Else
 
 let possuiOvos = true
@@ -310,7 +310,7 @@ switch (dia){
 }
 
 //-----------------------------------------------//
-    console.log("-- For, While e Do While --")
+    console.log("-- FOR, WHILE e DO WHILE --")
 // For, While e Do-While
     console.log("-- For --")
         const numeros = [1, 2, 3, 4, 5];
@@ -344,7 +344,7 @@ switch (dia){
             dado = Math.floor(Math.random() * 6) + 1;
             console.log("Você Tirou Um", dado)
         }
-   
+
     console.log("-- Do While --")
         let numero;
 
